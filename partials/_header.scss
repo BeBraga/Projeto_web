@@ -40,6 +40,7 @@ i{
     color: $white;
     background-color: transparent;
     transition: background-color 0.8s;
+    margin-top: 15px
 }
 
 .header-button:hover{
@@ -52,6 +53,7 @@ i{
     align-items: center;
     justify-content: center;
     margin-top: 14px;
+    margin-left: 90px
 }
 
 @media screen and (max-width: 768px){
