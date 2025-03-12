@@ -260,6 +260,7 @@ i {
   padding: 4px 8px;
   border-radius: 4px;
   border: 0;
+  color: #FFF;
 }
 
 @media screen and (max-width: 768px) {
