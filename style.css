@@ -105,7 +105,6 @@ i {
 }
 
 .hero {
-  color: #FFF;
   min-height: 80hv;
   display: flex;
   flex-direction: column;
@@ -118,10 +117,10 @@ i {
   line-height: 150%;
   max-width: 940px;
   font-size: 46px;
+  color: #6CCB5F;
 }
-.hero p {
-  text-align: center;
-  margin: 14px 0;
+.hero h2 {
+  color: #FFF;
 }
 .hero .button-contact {
   padding: 14px 28px;
@@ -195,7 +194,7 @@ i {
 }
 .services {
   background-color: #FFF;
-  color: #232224;
+  color: #06121E;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,6 +207,7 @@ i {
   text-align: center;
   font-size: 38px;
   margin-bottom: 14px;
+  color: #6CCB5F;
 }
 
 .services-content h2 {
@@ -255,8 +255,8 @@ i {
 }
 
 .ninfo button {
-  color: #232224;
-  background-color: #6CCB5F;
+  color: #06121E;
+  background-color: #E9008A;
   padding: 4px 8px;
   border-radius: 4px;
   border: 0;
@@ -282,6 +282,19 @@ i {
   gap: 8px;
 }
 
+.footer-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #E9008A;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
 .description {
   display: flex;
   justify-content: center;
@@ -292,12 +305,165 @@ i {
   text-align: center;
 }
 
+.professionals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 44px 34px 44px;
+}
+
+.professional {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #06121E;
+  border-radius: 8 px;
+  box-shadow: 0px -1px 17px -4px rgba(255, 255, 255, 0.45);
+  overflow: hidden;
+  color: #FFF;
+  position: relative;
+}
+.professional img {
+  width: 100%;
+  max-width: 354px;
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.professional img:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.professional-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+  z-index: 1;
+  color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+  .professionals {
+    flex-direction: column;
+  }
+}
+.more {
+  background-color: #06121E;
+  color: #06121E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+.more-content h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 14px;
+  color: #6CCB5F;
+}
+
+.more-content h2 {
+  line-height: 150%;
+  margin-bottom: 14px;
+  text-align: center;
+  max-width: 780px;
+  color: #FFF;
+}
+
+.pinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 44px 34px 44px;
+  max-width: 354px;
+  text-align: center;
+}
+
+.register {
+  background-color: #FFF;
+}
+
+.register-info {
+  margin-left: 30px;
+}
+
+.register-content {
+  display: flex;
+  gap: 14px;
+  padding: 34px 14px 64px 14px;
+}
+.register-content img {
+  max-width: 600px;
+}
+
+.register-content div {
+  flex: 1;
+}
+
+form {
+  margin: 0 auto;
+  width: 490px;
+  height: 300px;
+  padding: 15px;
+  border: 3px solid #06121E;
+  border-radius: 18px;
+}
+
+form div {
+  margin-top: 20px;
+}
+
+.register-info {
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .register-content {
+    flex-direction: column;
+  }
+  .register-info {
+    text-align: center;
+  }
+}
+.input {
+  border: 1px solid #06121E;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: #06121E;
+  background-color: transparent;
+  transition: background-color 0.8s;
+}
+
+.input:hover {
+  border: 1px solid #E9008A;
+  background-color: #E9008A;
+  cursor: pointer;
+}
+
+input, textarea {
+  border: 1px solid #06121E;
+  border-radius: 3px;
+}
+
+select, textarea {
+  border: 1px solid #06121E;
+  border-radius: 3px;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: #232224;
+  background-color: #06121E;
 }
 
 button {
